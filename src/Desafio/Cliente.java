@@ -12,21 +12,19 @@ public class Cliente {
 
 	}
 
-
 	public double obterValorTotal() {
 		double soma = 0.0;
-		
-			for (Compra result : compras) {
-				soma = result.subTotal();
-			}
-			return soma;
+
+		for (Compra result : compras) {
+			soma = result.subTotal();
+		}
+		return soma;
 
 	}
-	
+
 	public String impressora() {
-		
-		return 	"Cliente: " + this.nome + 
-				"\nTotal: R$ " + String.format("%.2f", obterValorTotal());
+
+		return "Cliente: " + this.nome + "\nTotal: R$ " + String.format("%.2f", obterValorTotal());
 	}
-	
+
 }

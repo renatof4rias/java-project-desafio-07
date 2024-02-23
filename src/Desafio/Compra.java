@@ -6,7 +6,7 @@ import java.util.List;
 public class Compra {
 
 	public List<Item> itens = new ArrayList<>();
-	
+
 	public double subTotal() {
 		double soma = 0.0;
 		for (Item result : itens) {
@@ -14,5 +14,5 @@ public class Compra {
 		}
 		return soma;
 	}
-	
+
 }
